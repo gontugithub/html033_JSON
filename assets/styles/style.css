@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 12% 1fr ;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-areas: 
+        "zh       zh"
+        "zn       zs"
+        "zf       zf";
+    
+}
+header{
+    grid-area: zh;
+    background-color: black;
+    color: white;
+}
+nav{
+    grid-area: zn;
+    background-color: grey;
+    padding: 10px;
+}
+
+nav > div{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+section{
+    grid-area: zs;
+    background-color: white;
+    
+}
+
+.td{
+    text-align: center;
+
+}
+
+footer{
+    grid-area: zf;
+    background-color: black;
+}
+
